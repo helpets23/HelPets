@@ -10,7 +10,7 @@
     <?php
     session_start();
     if (!isset($_SESSION['unique_id'])) {
-        header('location: login.php');
+        header('location: loginn.php');
     }
 ?>
         <?php include_once "head.php" ?>
@@ -37,7 +37,7 @@
             </div>
           
             <a href="php\logout.php" class ="logout">Sair</a> <!--sair do chat-->
-            <a href="inicial.html" class ="pag">Página Inicial</a> 
+            <a href="../inicial.html" class ="pag">Página Inicial</a> 
            </header>
            <form method="POST" classe ="search">
             <span  class ="text">Selecione o usuário para iniciar o chat</span>
