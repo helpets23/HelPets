@@ -221,7 +221,6 @@
     #products {
       grid-template-columns: auto auto;
       grid-column-gap: 1em;
-      
     }
   }
 
@@ -295,4 +294,3 @@
     margin-inline-end: 0px;
     font-style: italic;
   }
-  
