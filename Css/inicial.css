@@ -1552,13 +1552,11 @@ footer img{
 .texto{
   color: white;
   font-size: 25px;
-  margin-left: -598px;
-  margin-top: -50px;
+  margin-left: 150px;
+  margin-top: -70px;
   font-style: oblique;
- 
   
 }
-
 
 
 .bus{
@@ -1618,17 +1616,19 @@ footer img{
   font-size: 30px;
   font-style: none;
   display: flex;
-  margin-left: -600px;
+  margin-top: -30px;
+  margin-right: 490px;
+  
 
 }
-
 
 .t a{
   display: flex;
   color: white;
   width: 10%;
   text-decoration: none;
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-left: 20px;
 
 }
 .favorite-button{
