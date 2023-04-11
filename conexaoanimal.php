@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 include('./conexaohel.php');
 
 error_reporting(0);
@@ -27,14 +29,15 @@ if(isset($Arquivo)){
         $Doen = 'sim';
         $Img = $Arquivo['name'];
         $Des = $_POST['ContatoS'];
-        $sql = "INSERT INTO animaizinho (nome,sexo,idade,porte,peso,local,vacina_dia,doença,descrição,img,Raca) 
-        VALUES ('$Nome','$Sexo','$Idade','$Porte','$Peso','$Local','$Vac','$Doen','$Des','$Img','$Raca')";
+        $id_user = $_SESSION['unique_id'];
+        $sql = "INSERT INTO animaizinho (nome,sexo,idade,porte,peso,local,vacina_dia,doença,descrição,img,Raca,id_user) 
+        VALUES ('$Nome','$Sexo','$Idade','$Porte','$Peso','$Local','$Vac','$Doen','$Des','$Img','$Raca','$id_user')";
 
         if(mysqli_query($conexao,$sql)){
-                echo ("cadastrado com sucesso");
+                echo'Cadastrado com succeso';
         }
         else{
-            echo ("Erro ao entrar em contato".mysqli_connect_error($conexao));
+                echo('DEu erro');
         }
       };
 ?>
