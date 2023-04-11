@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doar</title>
+    <link rel="stylesheet" href="doarpage.css">
+    <!--direcionamento para o Css-->
+  </head>
+  <body>
+    <header class="header"><!-- criação de cabeçalho -->
+    <div class="ima">
+    <img src="./img/Helpet.png" width="20px" height="20px"><!--logo do HelPets-->
+</div>
+      <div class="titup">
+        <h3>Pagina do Doador</h3><!--titulo da página-->
+      </div>
+    <nav>
+      <ul class="topicos">
+        <li><a href="./chat/user.php">Chat</a></li>
+        <li><a href="inicial.html">Página Inicial</a></li>
+        <li><a href="Adotar.html">Adotar</a></li>
+        <li><a href="DoarPet.html">Doar</a></li>
+        <li><a href="sobrenos.html">Sobre Nós</a></li>
+        <li><a href="./chat/index.php">Login/Cadastro</a></li>
+        <li><a href="signup.html">Arrecadar</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div id="inf"><!--criação de classe para  centralizar o subtítulo-->
+  <h2>Insira as informações do animalzinho que você quer doar</h2>
+</div><br>
+<!--campo para escolher arquivo de imagem-->
+    <div class="container">
+    <div id="inf2">
+    <h3>Preencha os campos:</h3>
+    </div>
+    <form action="./conexaoanimal.php" method="POST" enctype="multipart/form-data" id="form">
+      <div class="divname">
+        Nome:<input type="text" name="Nome"><br><br>  
+      </div>
+      <div class="divfechar">
+        <button id="fechar" class="fechar">Fechar</button>  
+      </div>
+      <div class="divisor">
+
+        <div class="image-upload">
+        <label  for="uploadImage">
+            <img src="coloque_img.png" id="uploadPreview" style="width: 300px; height: 300px;">
+        </label>  
+        <input id="uploadImage" type="file" name="imagem" onchange="PreviewImage();">
+        </div> 
+            <style type="text/css">
+               .image-upload>input {
+               display: none;
+              }
+            </style>
+    <script>
+      // PREVIEW FOTO
+              function PreviewImage() {
+              var oFReader = new FileReader();
+              oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+    
+              oFReader.onload = function (oFREvent) {
+              document.getElementById("uploadPreview").src = oFREvent.target.result;
+          };
+      };
+    </script>
+    <div>
+  
+                <div class="campos"> <!--criei a div para facilitar a stylização-->
+                  <div id="cod1">
+                  <ul>
+                  <li>Raça:<input type="text" name="Raça"></li>
+                  <li>Sexo:<input type="text" name="Sexo"></li>
+                  <li>Idade:<input type="text" name="Idade"></li>
+                  </ul>
+                  </div>
+                  <div id="cod2"></div>
+                  <ul>
+                  <li>Porte:<input type="text" name="Porte" ></li>
+                  <li>Peso:<input type="text" name="Peso" ></li>
+                  <li>Estado:<input type="text" name="Estado"></li>
+                  <li>Cidade:<input type="text" name="Cidade"></li>
+                  </ul>
+                  </div>
+                
+                 <br> <label  id="vcd">Vacinas em dia?<br>
+                <!--criação de campo para selecionar sim ou não-->
+                <!--botão do tipo radio que pode ser marcada  ,nome answer que só pode ser uma resposta e sera a definitiva, valor yes ou melhor valor sim-->  
+                <input type="radio" name="answer" value="yes">
+                  Sim</input>
+                </label>
+                <label>
+                <input type="radio" name="answer" value="no">
+                  Não</input>
+                </label><br><br>
+                <!--criação de campo para selecionar sim ou não-->
+                 <label  id="vc">Possui doença?<br>
+                  <input type="radio" name="answer2" value="yes">
+                  Sim</input>
+                </label>
+                
+                <label>
+                  <input type="radio" name="answer2" value="no">
+                  Não</input>
+                </label><br><br>
+                <div>
+                <a href="./chat/user.php" class ="fab fa-telegram-plane"></a> 
+                </div>
+                <div class="container_historia">
+                  <label id="historia">História:</label><br>
+                  <textarea name="historia" id="historia1" cols="30" rows="10"></textarea><br>
+                  
+                  </div>
+    </div>
+      </div>
+        
+          <button type="submit" id="bute" onclick="salvar()">Salvar</button>
+          
+         </form>
+        </div>
+
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+          
+
+
+
+             <script src="doa.js"></script>
+       
+    </main>
+
+      <script>
+      function readImage() {// função ler imagem 
+      if (this.files && this.files[0]) {//refernciando um arquivo do input  e buscando o array de imagem 
+      var file = new FileReader();//criando um método que renderiza a imagem
+      file.onload = function(e) {//chamando uma funação do método para carregar um arquivo
+        document.getElementById("previw").src = e.target.result;//buscando o elemento imagem e setando o valor src para o valor recebido da função chamada
+        };       
+        file.readAsDataURL(this.files[0]);//cria um arquivo na url 
+        }
+      }
+        document.getElementById("imagem").addEventListener("change", readImage, false);//lendo o id da imagem e exibindo pro úsario
+      </script>
+</body>
+</html>
+

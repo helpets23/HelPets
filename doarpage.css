@@ -1,0 +1,177 @@
+*{
+    margin: auto;
+    padding: auto;
+    border: 0px;
+    vertical-align: baseline;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ab8262;
+    padding: 50px 20px;
+    height: 15px;
+  }
+
+header img{
+width: 150px;
+height: 100px;
+margin-top: -50px;
+padding-right: 40px;
+
+  }
+  body{
+    background-image: url('HELPETS\ \(4\).jpg');
+  }
+  a {
+    list-style: none;
+    text-decoration: none;
+    height: 80px;
+    justify-content: center;
+    width: 80px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    color:#ffff;
+    font-style: italic;
+    align-items: center;
+    padding: 5px;
+  }
+  .topicos a{
+    text-decoration: none;
+    font-family: ubuntu, Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    border-left: 4px;
+    transition: .4s;
+  
+  }
+  .topicos a:hover{
+    padding-left: 30px;
+    border-left: 4px solid #ffff;
+    color:  #ab8262;
+  }
+  
+  .topicos {
+    list-style: none;
+    color: black;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    transform: translateY(-50%);
+    flex-direction: row;
+  }
+  .tudo{
+    margin: -10px;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#form{  
+  margin-top: 70px;
+  width: 1000px;
+  padding:70px;
+  background-color:rgb(228, 228, 228);
+  position: relative;
+}
+.divisor{
+  display: flex;
+  padding:70px;
+}
+/*formulario de entrada de dados*/
+#arq{
+  color:#ffff;
+  font-family: 'Courier New', Courier, monospace;
+}
+.bute{
+  border: 1px solid rgba();
+}
+h4{
+  margin-top: 50px;
+  padding-left: 270px;
+  align-items: center;
+  padding-left: 200px;
+}
+h3{
+  color: white;
+  align-items: center;
+  
+}/*cabeçalho "doador"*/ 
+#form-2{
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  align-items: center;
+  padding-right: 400px;
+}
+#form-3{
+ 
+  margin-top: 50px;
+  width: 1000px;
+  height: 200px;
+  background-color: #ffdfbb;
+  color: rgb(10, 10, 10);
+  
+  
+}
+#form-3 h4{
+  
+  align-items: left;
+  padding-left: 22px;
+  margin-top: 80px; 
+  
+}
+#inf{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  color: rgb(0, 0, 0);
+    
+}
+.botao{
+  text-align: center;
+}
+#area{
+  margin-left: 25px;
+
+}
+.container_historia{
+  padding-left:100px;
+  margin-top: 100px;
+  margin-left: 0px;
+}
+.campos{
+  width:900px;
+
+}
+.divfechar{
+  right:10000px;
+}
+#fechar{
+    background-color: #ccaf8d;
+}
+#bute{
+    background-color: #ccaf8d; 
+    left:px;
+}
+.image-upload{
+left: 60px;
+}
+ ul li{
+ list-style: 100px;  
+}
+#cod1{
+    right: 10px;
+}
+#cod2{
+right:100px;
+}
+
+
+  

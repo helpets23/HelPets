@@ -1,0 +1,136 @@
+
+
+body {
+    background: url(https://lh3.googleusercontent.com/RD2uc9qN--AY5VVveSqY_KItKiNTvUWn4du-2yUC_gejhRMkZLox_DgJa9LUkIhC9yz2DRM-OfVHSXILEBzITHiAyZ-uhbrdmUHObN-2OsGauWdevChDxWU7NwUK9snSGsYSdeqZgtAEdfT5QSju0Qr9A_oS3uK_b0wdSVVhngeliWzef8U8AqZ8r1dLsMx_lk1u1nckpJYuFldoSxi2YfM2BTjqTF0YUE8-AjfYYViXqft_LSOx1eePY-NS5u-Ek3M77u5P0ZtKKHfrk2ynzrIJwIYD4VjY8UNW4vpbS-gMRkBfmdMtsnua5fkbwmy9l8nPBrhVmBXq1O3TqMfodntM5xmiEuIvM38CUpMSYfN5cTTlMBpIZPrzUnJi7yu2wTD3ULrkBEwmvpgiGMQvyb8TdxAS7yKJ1bmIp7lrqGIPZXqn-Eh3fAoHV7MUzwbzW6N4eCgQlSryGGfdpghFEC8_7YKVDbK6fgMpFaTF7ZWNB9ytsoLTa0m7ViiZJU9wiHBC5YQVxhNJrGs_JkJhxgcTYrbyM0smYUkNwjV2CHpItVWIcOuHjHPMDDFLDRSBph1T9nUYNDxFw0BY4t2zKAYNjmRjwRf9tbIwHftnLzpK7f3vrnAmDTucuUMCuOATceMv6NMBHS9iBgYriGd9pk6Pg4jQtCX7gkr3mQpNTwBFLuXw8ltrMQlGdjmRiVk3D127n5ul9zeg8oHrRn2hzL0vbiVVvOP0Wqu6DTr3DETkrcKM5oqMeUH6jLjuc_lOlJO7i8E6pfR_Lfhce0GXArsGPd_T_LvxVWIEYXuVBwGa2CobIuy-HFRDgs2NO-vDNcwNKkyED0dA3ObYXyG9GypHlY_BXfQiFcUoGS1bS36VypNrMZnbmW1VmknxVgkbo74sxOwGMeIA1x4BPuaTQZlverARO0ix930cj3KyNzIcfdN6jQ=w1453-h969-no?authuser=0) no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
+}
+
+#login {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+
+}
+
+.card {
+
+    background-color:#fff ;
+
+    padding: 40px;
+
+    border-radius: 2px;
+
+    width:280px;
+
+}
+
+.card-header {
+
+    padding-bottom: 50px;
+
+    opacity: 0.8;
+
+    color: #000;
+
+}
+
+.card-header::after {
+
+    content: "";
+
+    width: 70px;
+
+    height: 1px;
+
+    background-color: #fff;
+
+    display: block;
+
+    margin-top: -17px;
+
+    margin-left: -5px;
+
+}
+
+.card-content label {
+
+    color: #000;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+}
+
+.card-content-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:10px 0;
+
+}
+
+.card-content-area input {
+
+    margin-top: 10px;
+
+    padding:0 5px;
+
+    background-color: transparent;
+
+    border:none;
+
+    border-bottom: 1px solid #000;
+
+    outline: none;
+
+    color: #000;
+
+}
+
+.card-footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card-footer .submit{
+
+    width: 100%;
+
+    height: 40px;
+
+    background-color: #ab8262;
+
+    border:none;
+
+    color:white;
+
+    margin: 10px 0;
+
+}
+
+.card-footer a {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: #fff;
+
+    text-decoration: none;
+}    

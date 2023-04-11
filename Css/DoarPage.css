@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ab8262;
+    padding: 50px 20px;
+    height: 15px;
+    
+  }
+
+  .topicos a{
+    text-decoration: none;
+    font-family: ubuntu, Arial, Helvetica, sans-serif;
+    color: white;
+    border-left: 4px;
+    transition: .4s;
+  }
+  .topicos a:hover{
+    padding-left: 35px;
+    border-left: 4px solid white;
+    color: white;
+  }
+  
+  .topicos {
+    list-style: none;
+    color: black;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    transform: translateY(-50%);
+    flex-direction: row;
+    white-space: nowrap;
+    margin-top: 100px;
+    margin-left: 400px;
+  }
+
+  .topicos li{
+    padding: 25px;
+  }
+
+  .ima img{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .titup{
+    margin-left: 620px;
+    font-size: 25px;
+    color: aliceblue;
+    white-space: nowrap;
+  }
+
+  #inf h2{
+    margin-left: 630px;
+    margin-top: 110px;
+  }
+  
+
+  #form{
+    margin-top: 80px;
+    margin-left: -517px;
+  }
+
+  #inf2 h3{
+    margin-left: 400px;
+    margin-top: 32px;
+   }
+
+  .container{
+    width: 1500px;
+    height: 800px;
+    margin-left: 200px;
+    background-color: rgb(250, 247, 247);
+    display: flex;
+  }
+
+  .imagemcontainer{
+    margin-left: 30px;
+    width: 130px;
+    height: 130px;
+    margin-top: 100px;
+  }
+
+  .container form{
+    margin-left: 100px;
+    width: 130px;
+    height: 130px;
+    margin-top: 0px;
+  }
+
+  .container label{
+    margin-left: 0px;
+    width: 130px;
+    height: 130px;
+    margin-top: 0px;
+  }
+
+  .titucon{
+    margin-left: -250px;
+    margin-top: 30px;
+
+  }
+
+  .campos1{
+    margin-top: -250px;
+    margin-left: 700px;
+  }
+
+  .campos2{
+    margin-top: -125px;
+    margin-left: 270px;
+  }
+
+  .opc{
+    margin-top: 0px;
+    margin-left: -110px;
+    white-space: nowrap;
+  }
+.container_historia{
+  width: 488px;
+  height: 280px;
+  margin-left: -300px;
+  margin-top: 0px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+.container_foto{
+  width: 300px;
+  height: 100px;
+  margin-left: 100px;
+  background-color: white;
+}
+
+ 
