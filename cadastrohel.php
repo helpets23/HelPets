@@ -12,7 +12,7 @@ if(mysqli_query($conexao,$sql)){
         echo ("cadastrado com sucesso");
 }
 else{
-    echo ("Erro ao entrar em contato".mysqli_connect_error($conexao));
+    echo ("Erro ao entrar em contatos".mysqli_connect_error($conexao));
 }
 mysqli_close($conexao)
 ?>
